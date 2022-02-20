@@ -22,6 +22,6 @@ class ProductsTest < ApplicationSystemTestCase
     # Should be redirected to Home with new product
     assert_equal root_path, page.current_path
     assert_text "Change your life: Learn to code"
-    assert_equal 3, count: Product.count
+    assert_equal 3, Product.count
   end
 end
