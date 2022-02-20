@@ -4,5 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  def full)name
+  def full_name
+    "#{first_name} #{last_name}".titleize
+  end
 end
